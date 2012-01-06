@@ -6,6 +6,7 @@ Thanks to the [Google+ discussion](https://plus.google.com/111588569124648292310
 To get the dots into machine-readable form, I wrote a Python script to find all the dots and their centers.  I know it's a script that's been written a million times and much more efficient than this, but I needed an excuse to brush up on my Python anyway, and this works splendidly.  It's not the best code I've ever written or the most efficient possible, but it did its job.
 ##Script details
 You feed the script an image with green dots in it, and it spits out a CSV stream and, optionally, an image.
+
 * The output image (xkcd_marked.png here) is a modified version of the input image that has pink pixels showing where it found the centers of the dots
 * The output CSV stream (piped to pointlist.csv here) is a list of `x,y,dotsize`, where `dotsize` is the number of pixels that make up the dot, and `x` and `y` are the coordinates for the center of the dot.
 
